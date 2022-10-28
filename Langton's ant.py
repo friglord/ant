@@ -9,10 +9,10 @@ screen.bgcolor("white")
 turtle.ht()
 turtle.tracer(False)
 
-#contains all the coordinates the ant has visited
+#Contains all the coordinates the ant has visited
 memory = []
 
-#creating the ant
+#Creating the ant
 def ant():
     ant = turtle.Turtle()
     ant.shape("square")
@@ -26,7 +26,7 @@ def ant():
         #print(memory)
         currentPosition = coord(ant)
         
-        #if the ant hasn't been there before colour the pixel black
+        #If the ant hasn't been there before colour the pixel black
         if currentPosition not in memory:
             ant.fillcolor("black")
             ant.stamp()
